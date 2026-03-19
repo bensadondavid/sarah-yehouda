@@ -1,4 +1,5 @@
 import ArcheHome from "@/components/sections/ArcheHome"
+import HouppaFr from "@/components/sections/francais/HouppaFr"
 
 export default function HomeFrWithChabat() {
 
@@ -6,6 +7,7 @@ export default function HomeFrWithChabat() {
 
     <div>
       <ArcheHome />
+      <HouppaFr />
     </div>
 
   )

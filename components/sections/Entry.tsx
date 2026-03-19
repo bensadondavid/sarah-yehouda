@@ -7,7 +7,7 @@ export default function Entry({link, textLink}: {link:string, textLink: string})
 
   return (
 
-    <div className="w-screen h-screen bg-[url('/fond_sarah.webp')] flex justify-center items-center relative">
+    <div className="w-screen h-screen bg-[url('/fond_sarah.webp')] flex justify-center items-center relative z-20">
       <p className="absolute top-4 right-4 text-entry-text font-bsd">בס"ד</p>
         <div className="w-[80%] h-[80%] bg-white rounded-t-[50%_170px] flex flex-col items-center justify-around">
           <Image src={'/logo-sarah.webp'} alt="Logo Sarah" width={200} height={200} />

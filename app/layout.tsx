@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Alice, Lora, Frank_Ruhl_Libre } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
+import Musique from "@/components/ui/Musique";
 
 const alice = Alice({
   variable: "--font-alice",
@@ -51,8 +52,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className={`${lora.variable} ${alice.variable} ${slight.variable} ${franck.variable} antialiased`} >
-      <body>
-        {children}
+      <body className="relative">
+        <main>
+          {children}
+        </main>
+        <Musique />
       </body>
     </html>
   );

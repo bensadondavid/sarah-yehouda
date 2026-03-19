@@ -3,14 +3,14 @@
 // NE PAS OUBLIER D'INSTALLER ICS
 import { createEvent } from "ics";
 
-const SaveTheDate = ({ name, date }: {name : string, date: string}) => {
+const SaveTheDate = ({ name, date }: {name : string, date: [number, number, number, number, number]}) => {
 
   const handleDownload = () => {
     // Définir les détails de l'événement
     const event = {
       start: date, // [YYYY, MM, DD, HH, MM]
       duration: { hours: 4 },
-      title: "Save the Date: Bar Mitsvah Emmanuel Serfaty",
+      title: "Save the Date: Sarah&Yehouda's wedding",
     };
 
     // Générer le fichier ICS
