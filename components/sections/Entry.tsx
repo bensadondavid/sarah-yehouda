@@ -1,8 +1,9 @@
+/* eslint-disable react/no-unescaped-entities */
 import CountDown from "../ui/CountDown"
 import Image from "next/image"
 import Link from "next/link"
 
-export default function Entry({textLink}: {textLink: string}) {
+export default function Entry({link, textLink}: {link:string, textLink: string}) {
 
   return (
 
@@ -11,7 +12,7 @@ export default function Entry({textLink}: {textLink: string}) {
         <div className="w-[80%] h-[80%] bg-white rounded-t-[50%_170px] flex flex-col items-center justify-around">
           <Image src={'/logo-sarah.webp'} alt="Logo Sarah" width={200} height={200} />
           <CountDown />
-          <Link href={textLink || '/'} className="px-4 py-2 bg-entry-bg text-entry-text text-lg font-primary rounded-full">Voir l'invitation</Link>
+          <Link href={link || '/'} className="px-4 py-2 bg-entry-bg text-entry-text text-lg font-primary rounded-full">{textLink}</Link>
         </div>
     </div>
 

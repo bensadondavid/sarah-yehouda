@@ -4,7 +4,7 @@ export default function EntryPage() {
   return (
 
     <div>
-      <Entry textLink="/home" />
+      <Entry link="/hb/home" textLink="צפה בהזמנה" />
     </div>
 
   );
