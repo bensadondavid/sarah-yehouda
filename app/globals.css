@@ -16,6 +16,7 @@
   --font-secondary: var(--font-lora);
   --font-elegant : var(--font-slight);
   --font-bsd : var(--font-franck);
+  --font-hb : var(--font-heebo);
 }
 
 .musique button{

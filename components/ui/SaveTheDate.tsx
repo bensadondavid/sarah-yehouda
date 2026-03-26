@@ -3,7 +3,7 @@
 // NE PAS OUBLIER D'INSTALLER ICS
 import { createEvent } from "ics";
 
-const SaveTheDate = ({ name, date }: {name : string, date: [number, number, number, number, number]}) => {
+const SaveTheDate = ({ name, date, text }: {name : string, date: [number, number, number, number, number], text:string}) => {
 
   const handleDownload = () => {
     // Définir les détails de l'événement
@@ -28,7 +28,7 @@ const SaveTheDate = ({ name, date }: {name : string, date: [number, number, numb
   };
 
   return (
-    <button className={name} onClick={handleDownload}>Ajouter au calendrier</button>
+    <button className={name} onClick={handleDownload}>{text}</button>
   );
 };
 

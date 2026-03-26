@@ -29,8 +29,8 @@ export default function HouppaFr() {
       <p className="w-[80%] h-fit text-home-important font-secondary text-md text-center pb-6">LE 21 JUIN 2026<br />À 18H00 PRÉCISES</p>
       <p className="w-[80%] h-fit text-home-important font-secondary text-md text-center pb-8">À LA SALLE DESTINO<br />Ha-Pisga St, Shoresh <br />ISRAËL</p>
       <p className="w-[80%] h-fit text-home-text font-elegant text-sm text-center pb-8">“En ce jour si spécial, une tendre pensée envers ceux qui nous manquent et qui sont présents dans nos cœurs”</p>
-      <Waze name="w-[180px] h-[40px] bg-entry-text text-white rounded-full text-sm font-primary mb-3" lat="31.794961" long="35.067932" />
-      <SaveTheDate name="w-[180px] h-[40px] bg-entry-text text-white rounded-full text-sm font-primary" date={[2026, 6, 21, 18, 0]} />
+      <Waze name="w-[180px] h-[40px] bg-entry-text text-white rounded-full text-sm font-primary mb-3" lat="31.794961" long="35.067932" text="Itinéraire Waze" />
+      <SaveTheDate name="w-[180px] h-[40px] bg-entry-text text-white rounded-full text-sm font-primary" date={[2026, 6, 21, 18, 0]} text="Ajouter au calendrier" />
     </div>
     
   )

@@ -1,6 +1,6 @@
 'use client'
 
-const Waze = ({ name, lat, long }: {name:string, lat: string, long:string}) => {
+const Waze = ({ name, lat, long, text }: {name:string, lat: string, long:string, text:string}) => {
 
 
   const handleOpenWaze = () => {
@@ -16,7 +16,7 @@ const Waze = ({ name, lat, long }: {name:string, lat: string, long:string}) => {
   };
 
   return (
-    <button className={name} onClick={handleOpenWaze}>Itineraire Waze</button>
+    <button className={name} onClick={handleOpenWaze}>{text}</button>
   );
 };
 
