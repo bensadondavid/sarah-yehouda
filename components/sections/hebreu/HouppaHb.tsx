@@ -18,7 +18,7 @@ export default function HouppaHb() {
           <p>מר ומרת ברונו ובבת מאייר</p>
         </div>
         <div className="text-left">
-          <p>מרת רחל טבולה</p>
+          <p>מרת רחל טבול</p>
           <p>מר ומרת פיליפ ואניק ז׳איס</p>
         </div>
       </div>

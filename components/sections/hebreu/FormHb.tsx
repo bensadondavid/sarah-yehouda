@@ -122,6 +122,9 @@ const FormHb = () => {
             name="number" 
             value={formData.number} 
             onChange={handleChange}
+            min={1}
+            step={1}
+            inputMode='numeric'
             required
             /> 
         </label>

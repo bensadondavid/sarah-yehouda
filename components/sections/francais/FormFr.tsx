@@ -105,6 +105,9 @@ const FormFr = () => {
                 value={'assisteront'}
                 checked={formData.presence === 'assisteront'}
                 onChange={handleChange}
+                min={1}
+                step={1}
+                inputMode='numeric'
                 required
             />
         Assisteront</label>

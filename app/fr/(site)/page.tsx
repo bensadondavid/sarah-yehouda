@@ -5,7 +5,7 @@ export default function EntryPage() {
   return (
 
     <div>
-      <Entry link="/fr/home" textLink="Voir l'invitation" />
+      <Entry link="/fr/home" textLink="Voir l'invitation" direction="flex-row"/>
     </div>
 
   );

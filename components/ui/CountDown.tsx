@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-function CountDown() {
+function CountDown({text}: {text:string}) {
   const calculateTimeLeft = () => {
     const now = new Date();
     const weddingDate = new Date("2026-06-21T17:30:00");
@@ -51,7 +51,7 @@ function CountDown() {
   }
 
   return (
-    <div className="w-[90%] h-fit flex flex-row items-center justify-between text-center font-primary text-entry-text">
+    <div className={`w-[90%] h-fit flex ${text} items-center justify-between text-center font-primary text-entry-text`}>
       <div className="w-16 h-16 bg-entry-bg rounded-full flex flex-col items-center justify-center">
         <p className="text-lg">{timeLeft.days}</p>
         <p className="text-[10px]">DAYS</p>
