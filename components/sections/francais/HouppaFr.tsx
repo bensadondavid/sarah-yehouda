@@ -26,7 +26,7 @@ export default function HouppaFr() {
         <p>Yehouda</p>
       </div>
       <p className="w-[80%] h-fit text-home-text font-primary text-sm text-center pb-6">Et seraient honorés de votre présence à la Houppa qui aura lieu B”h</p>
-      <p className="w-[80%] h-fit text-home-important font-secondary text-md text-center pb-6">LE 21 JUIN 2026<br />À 18H00 PRÉCISES</p>
+      <p className="w-[80%] h-fit text-home-important font-secondary text-md text-center pb-6">LE 21 JUIN 2026<br />À 18H30 PRÉCISES</p>
       <p className="w-[80%] h-fit text-home-important font-secondary text-md text-center pb-8">À LA SALLE DESTINO<br />Ha-Pisga St, Shoresh <br />ISRAËL</p>
       <p className="w-[80%] h-fit text-home-text font-elegant text-sm text-center pb-8">“En ce jour si spécial, une tendre pensée envers ceux qui nous manquent et qui sont présents dans nos cœurs”</p>
       <Waze name="w-[180px] h-[40px] bg-entry-text text-white rounded-full text-sm font-primary mb-3" lat="31.794961" long="35.067932" text="Itinéraire Waze" />

@@ -38,7 +38,7 @@ export default function HouppaHb() {
       </p>
 
       <p className="w-[80%] h-fit text-home-important font-hb text-md text-center pb-6">
-        21 ביוני 2026<br />בשעה 18:00 בדיוק
+        21 ביוני 2026<br />בשעה 18:30 בדיוק
       </p>
 
       <p className="w-[80%] h-fit text-home-important font-hb text-md text-center pb-8">
