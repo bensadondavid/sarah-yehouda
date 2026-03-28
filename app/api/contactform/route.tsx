@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server"
 
 export async function POST(req: Request) {
-  
   const url = process.env.APPSCRIPT_URL
 
   try {
@@ -51,42 +50,14 @@ export async function POST(req: Request) {
       }),
     })
 
-    let data: { success?: boolean; error?: string } | null = null
+    const text = await response.text()
 
-    try {
-      data = await response.json()
-    } catch {
-      return NextResponse.json(
-        { message: "Réponse invalide du script" },
-        { status: 502 }
-      )
-    }
-
-    if (!response.ok) {
-      return NextResponse.json(
-        {
-          message: "Post failed",
-          statusFromScript: response.status,
-          detail: data,
-        },
-        { status: 502 }
-      )
-    }
-
-    if (!data?.success) {
-      return NextResponse.json(
-        {
-          message: "Erreur script",
-          detail: data,
-        },
-        { status: 502 }
-      )
-    }
-
-    return NextResponse.json(
-      { message: "Post succeeded" },
-      { status: 200 }
-    )
+    return NextResponse.json({
+      url,
+      statusFromScript: response.status,
+      ok: response.ok,
+      text: text.slice(0, 3000),
+    })
   } catch (err) {
     const msg = err instanceof Error ? err.message : "Unknown error"
     return NextResponse.json(
